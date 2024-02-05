@@ -17,7 +17,8 @@ const openB = new openBrowser({
  */
 const token =
   'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJsb2dpblRpbWVcIjoxNjk2NjQzODI5MDIxLFwibmFtZVwiOlwid2ViXCIsXCJjbGllbnRcIjpcImNybV93ZWJcIixcImlkXCI6XCJhMGM4YWExYi0yYWVmLTQzNDQtYmFiMi0wNTc1MzlhYzJkODVcIixcInR5cGVcIjpcIiAoaVBob25lOyBDUFUgaVBob25lIE9TIDEzXzJfMyBsaWtlIE1hYyBPUyBYXCIsXCJ1bmlxdWVJZFwiOlwiMTc5NTQyY2EtMzNkMy00Mzg3LTlmZjAtNDhkN2EzNGQxYWZmXCIsXCJleHBpcmVkVGltZVwiOjE2OTY3MDUyMDAwMDB9In0.-ieHcZjUjZiBGHBZRU3r6GngCEf2hdp8mZjGynUN_MVOkcXa27_4Xq2auo26KVZDWD_QHaVtLKHWPEKrxpKuug';
-const path = `/dbb?token=${token}`;
+// const path = `/dbb?token=${token}`;
+const path = `/dbb`;
 
 export const openBrowserByUrl = (isHttps) => {
   const localIp = openB.getLocalIP();

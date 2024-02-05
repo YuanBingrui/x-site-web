@@ -7,15 +7,23 @@
     "build": "next build",
     "start": "PORT=2024 next start",
     "lint": "next lint",
-    "https": "node ./scripts/https/index.js"
+    "https": "node ./scripts/https/index.js",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@vercel/postgres": "^0.7.2",
+    "bcrypt": "^5.1.1",
     "next": "14.1.0",
+    "next-auth": "5.0.0-beta.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "use-debounce": "^10.0.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -23,6 +31,7 @@
     "autoprefixer": "^10.0.1",
     "clsx": "^2.1.0",
     "cross-env": "^7.0.3",
+    "dotenv": "^16.4.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "node-forge": "^1.3.1",
